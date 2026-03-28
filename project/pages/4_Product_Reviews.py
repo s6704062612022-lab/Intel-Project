@@ -6,7 +6,7 @@ st.title("Product Review")
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-model = load_model(BASE_DIR / "reviews_model.pkl")
+model = joblib.load(BASE_DIR / "reviews_model.pkl")
 vectorizer = joblib.load(BASE_DIR / "tfidf_vectorizer.pkl")
 
 text = st.text_area("Enter review")
