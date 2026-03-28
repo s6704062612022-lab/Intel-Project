@@ -1,11 +1,14 @@
 import streamlit as st
 import joblib
 import numpy as np
+from pathlib import Path
 
 st.title("Cancer Prediction")
 
-model = joblib.load("../cancer_model_v2.pkl")
-scaler = joblib.load("../scaler.pkl")
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+model = joblib.load(BASE_DIR / "cancer_model_v2.pkl")
+scaler = joblib.load(BASE_DIR / "scaler.pkl")
 
 features = []
 
