@@ -24,6 +24,7 @@ st.write("""
 
 st.write("## Source")
 st.write("Kaggle IMDB Dataset")
+st.write("https://ai.stanford.edu/~amaas/data/sentiment/")
 
 st.markdown("---")
 st.caption("Developed for Intelligent System Project")
