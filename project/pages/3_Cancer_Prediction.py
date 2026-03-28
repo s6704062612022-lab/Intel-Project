@@ -1,12 +1,10 @@
 import streamlit as st
 import joblib
 import numpy as np
-import os
 
 st.title("Cancer Prediction")
 
-model_path = os.path.join(os.path.dirname(__file__), "..", "cancer_model_v2.pkl")
-model = joblib.load(model_path)
+model = joblib.load("cancer_model_v2.pkl")
 
 features = []
 
