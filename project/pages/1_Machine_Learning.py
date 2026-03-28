@@ -26,6 +26,7 @@ st.write("""
 
 st.write("## Source")
 st.write("UCI / Kaggle")
+st.write("https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)")
 
 st.markdown("---")
 st.caption("Developed for Intelligent System Project")
