@@ -1,12 +1,13 @@
+from keras.models import load_model
+from pathlib import Path
 import streamlit as st
 import joblib
-from pathlib import Path
 
 st.title("Product Review")
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-model = joblib.load(BASE_DIR / "reviews_model.pkl")
+model = load_model(BASE_DIR / "reviews_model.h5")
 vectorizer = joblib.load(BASE_DIR / "tfidf_vectorizer.pkl")
 
 text = st.text_area("Enter review")
