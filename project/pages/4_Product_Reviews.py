@@ -15,7 +15,7 @@ if st.button("Predict"):
     vec = vectorizer.transform([text]).toarray()
     pred = model.predict(vec)
 
-    if pred[0][0] > 0.5:
+    if pred[0] > 1:
         st.success("Positive")
     else:
         st.error("Negative")
