@@ -4,7 +4,8 @@ import numpy as np
 
 st.title("Cancer Prediction")
 
-model = joblib.load("cancer_model_v2.pkl")
+model = joblib.load("../cancer_model_v2.pkl")
+scaler = joblib.load("../scaler.pkl")
 
 features = []
 
