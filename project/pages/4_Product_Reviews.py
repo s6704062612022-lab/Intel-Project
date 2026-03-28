@@ -4,8 +4,8 @@ from keras.models import load_model
 
 st.title("Product Review")
 
-model = load_model("reviews_model.h5")
-vectorizer = joblib.load("tfidf_vectorizer.pkl")
+model = load_model("../reviews_model.h5")
+vectorizer = joblib.load("../tfidf_vectorizer.pkl")
 
 text = st.text_area("Enter review")
 
