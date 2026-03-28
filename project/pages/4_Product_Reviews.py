@@ -1,4 +1,3 @@
-from keras.models import load_model
 from pathlib import Path
 import streamlit as st
 import joblib
