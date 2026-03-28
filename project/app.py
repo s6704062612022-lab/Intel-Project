@@ -27,7 +27,7 @@ with col1:
              
     Using an Ensemble Machine Learning model.
     """)
-    st.page_link("pages/3_Cancer_Prediction.py", label="Go to Cancer Test", icon = "👉🏼")
+    st.page_link("pages/3_Cancer_Prediction.py", label="Go to Cancer Prediction", icon = "👉🏼")
 
 with col2:
     st.markdown("## Review Sentiment")
@@ -38,7 +38,7 @@ with col2:
              
     Using Neural Network (LSTM).
     """)
-    st.page_link("pages/4_Product_Reviews.py", label="Go to Review Test", icon = "👉🏼")
+    st.page_link("pages/4_Product_Reviews.py", label="Go to ProductReviews", icon = "👉🏼")
 
 st.markdown("---")
 
